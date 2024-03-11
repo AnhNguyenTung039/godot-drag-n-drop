@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://dluleke56ul6m"]
+
+[ext_resource type="PackedScene" uid="uid://c14rofl6nd37j" path="res://scene/texture_rect.tscn" id="1_yneqd"]
+[ext_resource type="Texture2D" uid="uid://j5t5s5xihomh" path="res://icon.svg" id="2_8r6bf"]
+
+[node name="Test" type="Node2D"]
+
+[node name="TextureRect" parent="." instance=ExtResource("1_yneqd")]
+offset_left = 369.0
+offset_top = 161.0
+offset_right = 469.0
+offset_bottom = 261.0
+texture = ExtResource("2_8r6bf")
+
+[node name="TextureRect2" parent="." instance=ExtResource("1_yneqd")]
+offset_left = 675.0
+offset_top = 97.0
+offset_right = 775.0
+offset_bottom = 197.0
+
+[node name="TextureRect3" parent="." instance=ExtResource("1_yneqd")]
+custom_minimum_size = Vector2(100, 100)
+offset_left = 229.0
+offset_top = 349.0
+offset_right = 329.0
+offset_bottom = 449.0
+
+[node name="TextureRect4" parent="." instance=ExtResource("1_yneqd")]
+custom_minimum_size = Vector2(100, 100)
+offset_left = 513.0
+offset_top = 410.0
+offset_right = 613.0
+offset_bottom = 510.0
