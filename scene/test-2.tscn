@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqi0siibj7mga"]
+
+[ext_resource type="Texture2D" uid="uid://j5t5s5xihomh" path="res://icon.svg" id="1_ss412"]
+[ext_resource type="Script" path="res://Object.gd" id="2_pb2g2"]
+
+[node name="Test-2" type="Node2D"]
+
+[node name="Object" type="Sprite2D" parent="."]
+position = Vector2(117, 96)
+texture = ExtResource("1_ss412")
+script = ExtResource("2_pb2g2")
+
+[node name="Button" type="Button" parent="Object"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -64.0
+offset_right = -64.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="Object/Button" to="Object" method="_on_button_button_down"]
+[connection signal="button_up" from="Object/Button" to="Object" method="_on_button_button_up"]
